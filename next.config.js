@@ -11,7 +11,7 @@ const nextConfig = {
                 destination:'/pages/about.html'
             },
             {
-                source:'/about',
+                source:'/nightstrike-nook',
                 destination:'/pages/nook.html'
             }
         ]
