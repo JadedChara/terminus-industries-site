@@ -10,7 +10,7 @@ export default function Page(params) {
       <head>
         <title>Terminus Industries | Post: {slug}</title>
         <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></script>
-        <script>Nutshell.setOptions(&#123;startOnLoad: true, lang: 'en', dontEmbedHeadings:false&#125;)</script>
+        <script>Nutshell.setOptions(&#123;startOnLoad: true, lang: &#39;en&#39;, dontEmbedHeadings:false&#125;)</script>
       </head>
       <body>
         <h2>Post: {slug}</h2>
