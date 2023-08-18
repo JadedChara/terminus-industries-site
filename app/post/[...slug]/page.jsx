@@ -5,7 +5,7 @@ export default function Page({ params }) {
       <head>
       <title>Terminus Industries</title>
         
-        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></script>
         <script>
             Nutshell.setOptions({options});
         </script>
