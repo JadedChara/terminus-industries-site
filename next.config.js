@@ -5,6 +5,14 @@ const nextConfig = {
             {
                 source:'/',
                 destination:'/index.html'
+            },
+            {
+                source:'/about',
+                destination:'/pages/about.html'
+            },
+            {
+                source:'/about',
+                destination:'/pages/nook.html'
             }
         ]
     }
