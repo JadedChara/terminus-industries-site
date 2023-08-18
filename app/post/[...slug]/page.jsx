@@ -5,7 +5,7 @@ import { useParams } from 'next/navigation'
 export default function Page() {
   //const router = useRouter()
   const params = useParams;
-  //const slug = params;
+  //var slug = params;
   return( 
         <h2>Post: {params[0]}</h2>
         <p>This is a rough test of the system. <a href="#More">:More...</a></p>
