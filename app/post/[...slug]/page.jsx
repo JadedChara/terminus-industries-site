@@ -1,11 +1,12 @@
 export default function Page({ params }) {
+  var pos = "srcScript";
   var options = {startOnLoad: true, lang: 'en', dontEmbedHeadings: false};
   return 
     <html>
       <head>
       <title>Terminus Industries</title>
         
-        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></script>
+        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async id={pos}></script>
         <script>
             Nutshell.setOptions({options});
         </script>
