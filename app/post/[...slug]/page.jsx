@@ -5,13 +5,12 @@ import { useRouter } from 'next/navigation'
 export default function Page(params) {
   const router = useRouter()
   const slug = params;
-  var options ={startOnLoad: true, lang: 'en', dontEmbedHeadings:false}
   return( 
     <html>
       <head>
         <title>Terminus Industries | Post: {slug}</title>
         <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></script>
-        <script>Nutshell.setOptions({options})</script>
+        <script>Nutshell.setOptions(&#123;startOnLoad: true, lang: 'en', dontEmbedHeadings:false&#125;)</script>
       </head>
       <body>
         <h2>Post: {slug}</h2>
