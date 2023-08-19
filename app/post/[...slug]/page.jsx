@@ -3,7 +3,7 @@
 //import { useParams } from 'next/navigation'
 import RootLayout from "@/app/layout"
  
-export default function Page({params}) {
+export default function Post({params}) {
   //const params = useParams;
   return( 
     <RootLayout>
