@@ -3,7 +3,7 @@
 //import { useParams } from 'next/navigation'
 import RootLayout from "@/app/layout"
  
-export default function Post({params}) {
+export default function Post({ params }: { params: { slug: string } }) {
   //const params = useParams;
   return( 
     <RootLayout>
