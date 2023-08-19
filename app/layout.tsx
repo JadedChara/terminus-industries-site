@@ -1,5 +1,7 @@
 import './globals.css'
 import type { Metadata } from 'next'
+import { Head } from 'next/head'
+import { Script } from 'next/script'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -16,11 +18,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <head>
+      <Head>
         <title>Terminus Industries | Post</title>
-        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></script>
-        <script>Nutshell.setOptions(&#123;startOnLoad: true, lang: &#39;en&#39;, dontEmbedHeadings:false&#125;)</script>
-      </head>
+        <Script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></Script>
+        <Script>Nutshell.setOptions(&#123;startOnLoad: true, lang: &#39;en&#39;, dontEmbedHeadings:false&#125;)</Script>
+      </Head>
       <body className={inter.className}>{children}</body>
     </html>
   )
