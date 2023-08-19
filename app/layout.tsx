@@ -17,7 +17,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
+    <html>
       <Head>
         <title>Terminus Industries | Post</title>
         </Head>
