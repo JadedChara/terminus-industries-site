@@ -1,17 +1,18 @@
-'use client'
+//'use client'
 
-import { useParams } from 'next/navigation'
+//import { useParams } from 'next/navigation'
+import RootLayout from "@/app/layout"
  
-export default function Page() {
-  //const router = useRouter()
-  const params = useParams;
-  //var slug = params;
+export default function Page({params}) {
+  //const params = useParams;
   return( 
-   <div>
-        <h2>Post: {params[0]}</h2>
+    <RootLayout>
+      <div>
+        <h2>Post: {params.id}</h2>
         <p>This is a rough test of the system. <a href="#More">:More...</a></p>
         <h2>:x More</h2>
-        <p>Your input slug for this url was &quot;{params[0]}&quot;</p>
-    </div>
+        <p>Your input slug for this url was &quot;{params.id}&quot;</p>
+      </div>
+    </RootLayout>
   )
 }
