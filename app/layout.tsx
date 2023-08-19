@@ -18,7 +18,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>Terminus Industries | Post</title>
-        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js" async></script>
         <script>Nutshell.setOptions(&#123;startOnLoad: true, lang: &#39;en&#39;, dontEmbedHeadings:false&#125;)</script>
       </head>
       <body className={inter.className}>{children}</body>
