@@ -16,14 +16,13 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  var posit = {startOnLoad: true, lang: "en", dontEmbedHeadings:false}
   return (
     <html lang="en">
       <Head>
         <title>Terminus Industries | Post</title>
         </Head>
         <Script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.js"></Script>
-        <Script>Nutshell.setOptions({posit})</Script>
+        <Script>{`Nutshell.setOptions({startOnLoad: true, lang: "en", dontEmbedHeadings:false})`}</Script>
       <body className={inter.className}>{children}</body>
     </html>
   )
