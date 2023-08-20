@@ -1,6 +1,4 @@
 //'use client'
-
-//import { useParams } from 'next/navigation'
  
 export default function Post({ params }: { params: { slug: string } }) {
   //const params = useParams;
