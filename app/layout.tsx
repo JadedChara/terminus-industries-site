@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import Head from 'next/head'
 import Script from 'next/script'
 import { Inter } from 'next/font/google'
+import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,7 +22,7 @@ export default function RootLayout({
       <Head>
         <title>Terminus Industries | Post</title>
       </Head>
-        <Script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js" strategy="beforeInteractive"></Script>
+        <Script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js"></Script>
       <body className={inter.className}>{children}</body>
     </html>
   )
