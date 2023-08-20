@@ -1,6 +1,10 @@
 //'use client'
 
-function Hyde({children}){
+function Hyde({
+  children,
+}: {
+  children: React.ReactNode
+}){
   return (
     <div suppressHydrationWarning>
       {typeof window === 'undefined' ? null : children}
