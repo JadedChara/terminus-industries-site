@@ -21,7 +21,6 @@ export default function RootLayout({
     <html lang="en">
       <Head>
         <title>Terminus Industries | Post</title>
-        <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js" defer></script>
       </Head>
         
       <body className={inter.className}>{children}</body>
