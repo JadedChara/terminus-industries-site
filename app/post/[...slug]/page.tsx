@@ -1,6 +1,5 @@
-'use client'
+//'use client'
 
-import Script from "next/script"
 
 export default function Post({ params }: { params: { slug: string } }) {
   //const params = useParams;
