@@ -8,6 +8,15 @@ function Hyde({
 }: {
   children: React.ReactNode
 }){
+  
+  return (
+    <div suppressHydrationWarning>
+      {typeof window === 'undefined' ? null : children}
+    </div>
+  )
+}
+
+export default function Post({ params }: { params: { slug: string } }) {
   const [loaded, setLoaded] = useState(false);
   useEffect(()=>{
     const nutScript = document.createElement('script');
@@ -20,15 +29,6 @@ function Hyde({
       return;
     }
   },[loaded])
-  return (
-    <div suppressHydrationWarning>
-      {typeof window === 'undefined' ? null : children}
-    </div>
-  )
-}
-
-export default function Post({ params }: { params: { slug: string } }) {
-  
   return(
       <div>
         
