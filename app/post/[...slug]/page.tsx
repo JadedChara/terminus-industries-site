@@ -1,8 +1,8 @@
-'use client'
+//'use client'
 
 //import useEffect from 'react';
 //import useState from 'react';
-
+import useSWR from 'swr'
 function Hyde({
   children,
 }: {
@@ -29,9 +29,14 @@ export default function Post({ params }: { params: { slug: string } }) {
       return;
     }
   },[loaded])*/
+  const {data, error, isLoading} = useSWR(
+    'https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js',fetcher
+  )
+  if (error) return <p>Failed to load.</p>
+  if (isLoading) return <p>Loading...</p>
   return(
       <div>
-        <Hyde><script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js"></script></Hyde>
+        <script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js"></script>
         <h2>Post: {params.slug}</h2>
         <p>This is a rough test of the system. <a href="#More">:More...</a></p>
         <h2>:x More </h2>
