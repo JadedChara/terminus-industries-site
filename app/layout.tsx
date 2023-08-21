@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import Head from 'next/head'
 import Script from 'next/script'
 import { Inter } from 'next/font/google'
-import { useEffect, useState } from 'react'
+//import { useEffect, useState } from 'react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -17,18 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const [loaded, setLoaded] = useState(false);
-  useEffect(()=>{
-    const nutScript = document.createElement('script');
-    nutScript.src = "//cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js";
-    nutScript.addEventListener('load',()=>setLoaded(true));
-
-  },[])
-  useEffect(()=>{
-    if(!loaded){
-      return;
-    }
-  },[loaded])
+  
   return (
     <html lang="en">
       <Head>
