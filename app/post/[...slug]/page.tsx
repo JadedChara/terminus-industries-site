@@ -1,7 +1,7 @@
 'use client'
 
-import useEffect from 'react';
-import useState from 'react';
+//import useEffect from 'react';
+//import useState from 'react';
 
 function Hyde({
   children,
@@ -17,7 +17,7 @@ function Hyde({
 }
 
 export default function Post({ params }: { params: { slug: string } }) {
-  const [loaded, setLoaded] = useState(false);
+  /*const [loaded, setLoaded] = useState(false);
   useEffect(()=>{
     const nutScript = document.createElement('script');
     nutScript.src = "//cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js";
@@ -28,10 +28,10 @@ export default function Post({ params }: { params: { slug: string } }) {
     if(!loaded){
       return;
     }
-  },[loaded])
+  },[loaded])*/
   return(
       <div>
-        
+        <Hyde><script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js"></script></Hyde>
         <h2>Post: {params.slug}</h2>
         <p>This is a rough test of the system. <a href="#More">:More...</a></p>
         <h2>:x More </h2>
