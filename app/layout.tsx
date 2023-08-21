@@ -17,6 +17,18 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  const [loaded, setLoaded] = useState(false);
+  useEffect(()=>{
+    const nutScript = document.createElement('script');
+    nutScript.src = "//cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js";
+    nutScript.addEventListener('load',()=>setLoaded(true));
+
+  },[])
+  useEffect(()=>{
+    if(!loaded){
+      return;
+    }
+  },[loaded])
   return (
     <html lang="en">
       <Head>
