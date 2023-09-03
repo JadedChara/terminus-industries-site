@@ -15,7 +15,7 @@ function Hyde({
   )
 }
 
-export default function Post({ params }: { params: { slug: string } }) {
+export default function Page({ params }: { params: { slug: string } }) {
   
   return(
       <div>
