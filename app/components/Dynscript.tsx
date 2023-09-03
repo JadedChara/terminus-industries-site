@@ -3,13 +3,12 @@ import Script from 'next/script'
 export default function Dynscript() {
   return (
     <div>
-      <Script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js" />
-      <Script>
+      <Script src="https://cdn.jsdelivr.net/gh/ncase/nutshell/nutshell.min.js" onLoad={()=>{
         Nutshell.setOptions({
-            startOnLoad: false,
+            startOnLoad: true,
             lang: 'en', 
             dontEmbedHeadings: false,
-        })</Script>
+        })}}/>
     </div>
   )
 }
