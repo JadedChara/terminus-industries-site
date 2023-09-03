@@ -25,7 +25,6 @@ export default function RootLayout({
       <Head>
         <title>Terminus Industries | Post</title>
         <DynamicSrc/>
-        <h2>Post: {params.slug}</h2>
       </Head>
         
       <body className={inter.className}>{children}</body>
