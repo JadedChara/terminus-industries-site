@@ -17,7 +17,7 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  const DynamicSrc = dynamic(()=> import("./components/Dynscript"),{
+  const DynamicSrc = dynamic(()=> import("./components/Dynscript.tsx"),{
     ssr:false
   })
   return (
