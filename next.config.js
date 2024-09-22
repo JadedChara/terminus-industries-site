@@ -16,7 +16,7 @@ const nextConfig = {
             },
             {
                 source:'/projects',
-                destination:'projects.html'
+                destination:'/projects.html'
             }
         ]
     }
