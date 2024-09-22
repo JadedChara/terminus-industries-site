@@ -13,6 +13,10 @@ const nextConfig = {
             {
                 source:'/nightstrike-nook',
                 destination:'/pages/nook.html'
+            },
+            {
+                source:'/projects',
+                destination:'projects.html'
             }
         ]
     }
