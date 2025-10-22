@@ -1,5 +1,60 @@
 <!DOCTYPE html>
-
+<style>
+    ul{
+        list-style-type: none;
+    }
+    .menublock{
+        position:absolute;
+        width: 25%;
+        
+        background-color: aquamarine;
+    }
+    .menusub{
+        display:none;
+        overflow-y: visible;
+        background-color: grey;
+        
+        
+    }
+    .dropmenu{
+        top:0;
+        position: relative;
+        text-align: left;
+    }
+    a{
+        text-decoration:none;
+        color:black;
+    }
+    .subsub{
+        top: 0;
+        position:absolute;
+        padding: 5px;
+        left:100%;
+        display:none;
+        background-color: rgb(147, 147, 147);
+        
+    }
+    .supersub{
+        top: 0;
+        position:absolute;
+        padding: 5px;
+        left:100%;
+        display:none;
+        background-color: rgb(147, 147, 147);
+    }
+    .menublock:hover .menusub{
+        display:block;
+    }
+    .menusub:hover .subsub{
+        display:block;
+        overflow-y: visible;
+    }
+    .dropmenu:hover .supersub{
+        display:block;
+        overflow-y: visible;
+    }
+    
+</style>
 <html>
     <head>
         <title>Terminus Industries - Transformers Projects</title>
@@ -13,9 +68,63 @@
             });
             </script>
     </head>
-    <body style="font-family: Arial, Helvetica, sans-serif; padding-left: 5%; padding-right: 5%; padding-top: 5%;">
+    <body style="font-family: Arial, Helvetica, sans-serif;">
         <!--Header-->
-        <img src="../logofull.png"></img>
+        <div  style="padding-left: 5%; padding-right:5%; width:90%; padding-top: 0%;">
+            <a href="https://terminus-industries.vercel.app">
+                <img style="align-content: center; max-inline-size:90%;" src="../logofull.png"></img>
+            </a>
+            <table style="width: 100%;">
+                <tr>
+                    <th style="">
+                        <div class="menublock"><a href="../pages/projects.html">Projects</a>
+                            <div class="menusub"><a href="../pages/tfprojects.html">Transformers</a></div>
+                            <div class="menusub"><a href="../pages/codingprojects.html">Coding</a></div>
+                            <div class="menusub"><a href="../pages/papercraftprojects.html">Papercraft</a></div>
+                            <div class="menusub"><a href="../pages/miscprojects.html">Misc.</a></div>
+                        </div>
+                    </th>
+                    <th style="">
+                        <div class="menublock"><a href="./pages/about.html">About</a>
+                            <div class="menusub">Who We Are</div>
+                            <div class="menusub">Contact</div>
+                        </div>
+                    </th>
+                    <th style="">
+                        <div class="menublock"><a href="./pages/nook.html">Nightstrike's Nook</a>
+                            <div class="menusub">
+                                <div><a>Reviews</a></div>
+                                <ul class="subsub">
+                                    <li class="dropmenu"><a href="./logofull.png">Movies</a></li>
+                                    <li class="dropmenu"><a>Shows</a></li>
+                                    <li class="dropmenu"><a>Toys</a>
+                                        <ul class="supersub">
+                                            <li class="dropmenu"><a>Transformers</a></li>
+                                            <li class="dropmenu"><a>Gundam</a></li>
+                                            <li class="dropmenu"><a>Misc.</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="dropmenu"><a>Books</a></li>
+                                    <li class="dropmenu"><a>Dining</a></li>
+                                </ul>
+                            </div>
+                            <div class="menusub"><a>Announcements</a></div>
+                            <div class="menusub"><a>Blog</a></div>
+                        </div>
+                    </th>
+                    <th style="">
+                        <div class="menublock">Products
+                            <div class="menusub">Transformers - Anarchy</div>
+                            <div class="menusub">Transformers - Micro Mayhem</div>
+                            <div class="menusub">Transformers - Legacy: Rise</div>
+                            <div class="menusub">Diaclone - Expansion</div>
+                            <div class="menusub">Upgrades & Accessories</div>
+                            <div class="menusub">Misc.</div>
+                        </div>
+                    </th>
+                </tr>
+            </table>
+        </div>
         <!--
             =============
             || CONTENT ||
@@ -30,6 +139,10 @@
         </p>
         <p>
             Ratbat Mk. II
+            <img src="a">
+            <img src="b">
+            <img src="c">
+            <img src="d">
         </p>
         <p>
             Wingthing Mk. II
